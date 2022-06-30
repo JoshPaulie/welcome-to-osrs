@@ -4,7 +4,7 @@ Skills are the bread and butter of RS. Most actions earn XP towards a related sk
 > What Quests should I do?
 > [Check out the Optimal Quest here](https://oldschool.runescape.wiki/w/Optimal_quest_guide#Quests)
 
-The most efficient way to level a skill is (contrary to Reddit's opinion) is entirely up to you. Again, some methods are more engaging (read: sweaty) and others can be done from your phone while at the Doctor's office.
+The most efficient way to level a skill is (contrary to Reddit's opinion) entirely up to you. Again, some methods are more engaging (read: sweaty) and others can be done from your phone while at the Doctor's office.
 
 Check the [OldSchool wiki](https://oldschool.runescape.wiki/w/Skills) to see the various methods you can try.
 
