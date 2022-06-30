@@ -1,7 +1,7 @@
 # Membership and bonds
 
 ## Should I buy membership?
-If you have any interest in the game, I would go ahead and buy 1 month of membership. The full game is considerably more engaging than the free-to-play version, with faster experience and more activites.
+If you have any interest in the game, I would go ahead and buy 1 month of membership. The full game is considerably more engaging than the free-to-play version, with faster experience and more activities.
 
 ## What are bonds?
 Bonds are 14 days of membership that you can buy off the GE, or with IRL $. They serve two purposes.
@@ -16,6 +16,6 @@ Some people are of the mentality "I can play free-to-play long enough, I can aff
 That being said, you don't have to pay for membership forever. It's possible to grind your account to a point where you can make enough gp/hour to cover 2 bonds a month. Some players even just play one main account and bond out their others. 
 
 ## Are bonds worth buying with IRL money for GP?
-Ehh. A bond costs $7.99 and is worth ~5m-7m gold. It's a nice cash infusion everyone once and awhile, but you'll really have to be shilling out cash to play the game soley off bonds.
+Ehh. A bond costs $7.99 and is worth ~5m-7m gold. It's a nice cash infusion everyone once and awhile, but you'll really have to be shilling out cash to play the game solely off bonds.
 
 > Whales exist, and will mention buying a ton of bonds. Laugh at them, they are nerds 🐋
