@@ -3,11 +3,13 @@
 
 # Guide
 - [Skills](./Skills.md)
+  - [Minigames and Activies](./Minigames_Activies.md)
 - [Experience](./Experience.md)
 - [Quests](./Quests.md)
 - [Combat](./Combat.md)
 - [Prayers](./Prayers.md)
 - [Grand Exchange](./GE.md)
+  - [Money Making](./Money_Making.md)
 - [Transportation](./Transportation.md)
 
 # Topics
