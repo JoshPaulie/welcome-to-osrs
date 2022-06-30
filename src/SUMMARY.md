@@ -1,7 +1,7 @@
 # Summary
+[Welcome](./00_Welcome.md)
 
 # Guide
-- [Welcome](./00_Welcome.md)
 - [Skills](./01_Skills.md)
 - [Experience](./02_Experience.md)
 - [Quests](./03_Quests.md)
