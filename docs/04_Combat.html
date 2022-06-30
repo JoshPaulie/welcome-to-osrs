@@ -1,0 +1,216 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Combat - Welcome to OldSchool</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">Guide</li><li class="chapter-item expanded "><a href="00_Welcome.html"><strong aria-hidden="true">1.</strong> Welcome</a></li><li class="chapter-item expanded "><a href="01_Skills.html"><strong aria-hidden="true">2.</strong> Skills</a></li><li class="chapter-item expanded "><a href="02_Experience.html"><strong aria-hidden="true">3.</strong> Experience</a></li><li class="chapter-item expanded "><a href="03_Quests.html"><strong aria-hidden="true">4.</strong> Quests</a></li><li class="chapter-item expanded "><a href="04_Combat.html" class="active"><strong aria-hidden="true">5.</strong> Combat</a></li><li class="chapter-item expanded "><a href="05_Prayers.html"><strong aria-hidden="true">6.</strong> Prayers</a></li><li class="chapter-item expanded "><a href="06_GE.html"><strong aria-hidden="true">7.</strong> Grand Exchange</a></li><li class="chapter-item expanded "><a href="07_Transportation.html"><strong aria-hidden="true">8.</strong> Transportation</a></li><li class="chapter-item expanded affix "><li class="part-title">Topics</li><li class="chapter-item expanded "><a href="topics/runelite.html"><strong aria-hidden="true">9.</strong> RuneLite</a></li><li class="chapter-item expanded "><a href="topics/membership_bonds.html"><strong aria-hidden="true">10.</strong> Membership and Bonds</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Welcome to OldSchool</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="combat"><a class="header" href="#combat">Combat</a></h1>
+<p>There are 6 combat skills. <strong>Attack</strong>, <strong>Strength</strong>, <strong>Defense</strong>, <strong>Hit Points</strong>, <strong>Ranged</strong> and <strong>Magic</strong>.</p>
+<p>They help build the 3 combat styles: Melee, Ranged, and Magic. You level these skills by using them in combat.</p>
+<h2 id="how-combat-works-in-os"><a class="header" href="#how-combat-works-in-os">How Combat works in OS</a></h2>
+<p>In OS, the game runs on &quot;ticks.&quot; Every game tick progresses the game forward, and all events occur on a tick. Each tick is 0.6s. </p>
+<p>The <a href="https://oldschool.runescape.wiki/w/Rune_scimitar">Rune Scimitar</a>, for example, has a speed of 4. This means it hits every 2.4s (0.6 * 4).</p>
+<ul>
+<li>If you inflict damage, a bright red hitsplat will appear over the monster you attacked. This is how much damage you inflicted.</li>
+<li>Damage is calculated just before an attack animation occurs. NOT WHEN THE HITSPLAT APPEARS.
+<ul>
+<li>This is the core mechanic behind lazy prayer-flicking. You activate an overhead Prayer just before they attack and deactivate it right after they strike. This way, you have a chance of negating the damage and not drain any prayer points. Prayers are covered more in the next section.</li>
+</ul>
+</li>
+<li>If you miss, a bright blue 0 hitsplat will appear.</li>
+<li>If any hitsplat is duller in appearance, this is someone else's attack.</li>
+</ul>
+<h2 id="combat-skills-explained-again"><a class="header" href="#combat-skills-explained-again">Combat skills explained (again)</a></h2>
+<table><thead><tr><th style="text-align: center">Skill</th><th style="text-align: left">How it effects gameplay</th></tr></thead><tbody>
+<tr><td style="text-align: center">Attack</td><td style="text-align: left">Determines your accuracy, or if your hit will land.</td></tr>
+<tr><td style="text-align: center">Strength</td><td style="text-align: left">Determines how hard you hit if successful, and directly increases your melee max hit.</td></tr>
+<tr><td style="text-align: center">Defense</td><td style="text-align: left">Determines how much of a landing melee attack is negated.</td></tr>
+<tr><td style="text-align: center">HP</td><td style="text-align: left">Determines how many hit points you have</td></tr>
+<tr><td style="text-align: center">Ranged</td><td style="text-align: left">Determines the max hit and accuracy of ranged attacks. Your ranged max hit is also influenced by strength.</td></tr>
+<tr><td style="text-align: center">Magic</td><td style="text-align: left">Determines the max hit and accuracy of magic attacks.</td></tr>
+</tbody></table>
+<p><em>On top of effecting your accuracy and max hits, higher levels allow you to use more powerful weapons or spells.</em></p>
+<h2 id="what-order-should-i-max-the-melee-skills"><a class="header" href="#what-order-should-i-max-the-melee-skills">What order should I max the melee skills?</a></h2>
+<p>Because strength increases your max it, it's most efficient to max it first.
+With that in mind, you do need higher Attack to equip better weapons.</p>
+<p>Leveling any combat is a slow, long-haul skill. Don't expect any combat skill maxed for a long time.</p>
+<h2 id="how-do-i-train-combat"><a class="header" href="#how-do-i-train-combat">How do I train combat?</a></h2>
+<p>As soon as you can, complete the <a href="https://oldschool.runescape.wiki/w/Waterfall_Quest">Waterfall Quest</a>.</p>
+<p>This will boost your Strength and Attack levels to 30+, a huge jump with little to no actual combat. As outlined in the <a href="./03_Quests.html">Quests</a> section, quest rewards are most beneficial early in your accounts lifetime. </p>
+<h2 id="combat-triangle"><a class="header" href="#combat-triangle">Combat Triangle</a></h2>
+<p>This is combat triangle. I literally don't think about it. I might be bad, but idk figured I'd mention it.</p>
+<p>I typically equip gear that protects againt my opponent's damage type and a weapon that they're weak to.</p>
+<p>Always check the wiki to see what kind of stats you're up against.</p>
+<table><thead><tr><th style="text-align: center">The combat triangle</th></tr></thead><tbody>
+<tr><td style="text-align: center"><img src="./imgs/Combat_triangle.png" alt="The combat triangle" /></td></tr>
+</tbody></table>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="03_Quests.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="05_Prayers.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="03_Quests.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="05_Prayers.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>
