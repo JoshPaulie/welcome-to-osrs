@@ -4,7 +4,7 @@
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title>Page not found - Welcome to OldSchool</title>
-        <base href="/">
+        <base href="/welcome-to-osrs/">
 
 
         <!-- Custom HTML head -->
@@ -82,7 +82,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="00_Welcome.html">Welcome</a></li><li class="chapter-item expanded affix "><li class="part-title">Guide</li><li class="chapter-item expanded "><a href="01_Skills.html"><strong aria-hidden="true">1.</strong> Skills</a></li><li class="chapter-item expanded "><a href="02_Experience.html"><strong aria-hidden="true">2.</strong> Experience</a></li><li class="chapter-item expanded "><a href="03_Quests.html"><strong aria-hidden="true">3.</strong> Quests</a></li><li class="chapter-item expanded "><a href="04_Combat.html"><strong aria-hidden="true">4.</strong> Combat</a></li><li class="chapter-item expanded "><a href="05_Prayers.html"><strong aria-hidden="true">5.</strong> Prayers</a></li><li class="chapter-item expanded "><a href="06_GE.html"><strong aria-hidden="true">6.</strong> Grand Exchange</a></li><li class="chapter-item expanded "><a href="07_Transportation.html"><strong aria-hidden="true">7.</strong> Transportation</a></li><li class="chapter-item expanded affix "><li class="part-title">Topics</li><li class="chapter-item expanded "><a href="topics/runelite.html"><strong aria-hidden="true">8.</strong> RuneLite</a></li><li class="chapter-item expanded "><a href="topics/membership_bonds.html"><strong aria-hidden="true">9.</strong> Membership and Bonds</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="Welcome.html">Welcome</a></li><li class="chapter-item expanded affix "><li class="part-title">Guide</li><li class="chapter-item expanded "><a href="Skills.html"><strong aria-hidden="true">1.</strong> Skills</a></li><li class="chapter-item expanded "><a href="Experience.html"><strong aria-hidden="true">2.</strong> Experience</a></li><li class="chapter-item expanded "><a href="Quests.html"><strong aria-hidden="true">3.</strong> Quests</a></li><li class="chapter-item expanded "><a href="Combat.html"><strong aria-hidden="true">4.</strong> Combat</a></li><li class="chapter-item expanded "><a href="Prayers.html"><strong aria-hidden="true">5.</strong> Prayers</a></li><li class="chapter-item expanded "><a href="GE.html"><strong aria-hidden="true">6.</strong> Grand Exchange</a></li><li class="chapter-item expanded "><a href="Transportation.html"><strong aria-hidden="true">7.</strong> Transportation</a></li><li class="chapter-item expanded affix "><li class="part-title">Topics</li><li class="chapter-item expanded "><a href="topics/runelite.html"><strong aria-hidden="true">8.</strong> RuneLite</a></li><li class="chapter-item expanded "><a href="topics/membership_bonds.html"><strong aria-hidden="true">9.</strong> Membership and Bonds</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -163,22 +163,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

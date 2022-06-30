@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Transportation - Welcome to OldSchool</title>
+        <title>Combat - Welcome to OldSchool</title>
 
 
         <!-- Custom HTML head -->
@@ -81,7 +81,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="00_Welcome.html">Welcome</a></li><li class="chapter-item expanded affix "><li class="part-title">Guide</li><li class="chapter-item expanded "><a href="01_Skills.html"><strong aria-hidden="true">1.</strong> Skills</a></li><li class="chapter-item expanded "><a href="02_Experience.html"><strong aria-hidden="true">2.</strong> Experience</a></li><li class="chapter-item expanded "><a href="03_Quests.html"><strong aria-hidden="true">3.</strong> Quests</a></li><li class="chapter-item expanded "><a href="04_Combat.html"><strong aria-hidden="true">4.</strong> Combat</a></li><li class="chapter-item expanded "><a href="05_Prayers.html"><strong aria-hidden="true">5.</strong> Prayers</a></li><li class="chapter-item expanded "><a href="06_GE.html"><strong aria-hidden="true">6.</strong> Grand Exchange</a></li><li class="chapter-item expanded "><a href="07_Transportation.html" class="active"><strong aria-hidden="true">7.</strong> Transportation</a></li><li class="chapter-item expanded affix "><li class="part-title">Topics</li><li class="chapter-item expanded "><a href="topics/runelite.html"><strong aria-hidden="true">8.</strong> RuneLite</a></li><li class="chapter-item expanded "><a href="topics/membership_bonds.html"><strong aria-hidden="true">9.</strong> Membership and Bonds</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="Welcome.html">Welcome</a></li><li class="chapter-item expanded affix "><li class="part-title">Guide</li><li class="chapter-item expanded "><a href="Skills.html"><strong aria-hidden="true">1.</strong> Skills</a></li><li class="chapter-item expanded "><a href="Experience.html"><strong aria-hidden="true">2.</strong> Experience</a></li><li class="chapter-item expanded "><a href="Quests.html"><strong aria-hidden="true">3.</strong> Quests</a></li><li class="chapter-item expanded "><a href="Combat.html" class="active"><strong aria-hidden="true">4.</strong> Combat</a></li><li class="chapter-item expanded "><a href="Prayers.html"><strong aria-hidden="true">5.</strong> Prayers</a></li><li class="chapter-item expanded "><a href="GE.html"><strong aria-hidden="true">6.</strong> Grand Exchange</a></li><li class="chapter-item expanded "><a href="Transportation.html"><strong aria-hidden="true">7.</strong> Transportation</a></li><li class="chapter-item expanded affix "><li class="part-title">Topics</li><li class="chapter-item expanded "><a href="topics/runelite.html"><strong aria-hidden="true">8.</strong> RuneLite</a></li><li class="chapter-item expanded "><a href="topics/membership_bonds.html"><strong aria-hidden="true">9.</strong> Membership and Bonds</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -142,44 +142,56 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="transportation"><a class="header" href="#transportation">Transportation</a></h1>
-<p>Getting around in the early game if fucking brutal. Let's talk about some of the ways you can travel.</p>
-<blockquote>
-<p>While using RuneLite, open your World Map. All modes of transportation can be found with icons telling you how to get there.</p>
-</blockquote>
-<h2 id="using-the-wiki"><a class="header" href="#using-the-wiki">Using the wiki</a></h2>
-<p>The OSRS wiki is an amazing resource you will use regularly. Most locations have a &quot;getting there&quot; or &quot;transportation&quot; section, detailing different ways to get to your destination.</p>
-<table><thead><tr><th style="text-align: center">Example getting there section</th></tr></thead><tbody>
-<tr><td style="text-align: center"><img src="./imgs/varrock-transportation.png" alt="Varrack Transportation" /></td></tr>
+                        <h1 id="combat"><a class="header" href="#combat">Combat</a></h1>
+<p>There are 6 combat skills. <strong>Attack</strong>, <strong>Strength</strong>, <strong>Defense</strong>, <strong>Hit Points</strong>, <strong>Ranged</strong> and <strong>Magic</strong>.</p>
+<p>They help build the 3 combat styles: Melee, Ranged, and Magic. You level these skills by using them in combat.</p>
+<h2 id="how-combat-works-in-os"><a class="header" href="#how-combat-works-in-os">How Combat works in OS</a></h2>
+<p>In OS, the game runs on &quot;ticks.&quot; Every game tick progresses the game forward, and all events occur on a tick. Each tick is 0.6s. </p>
+<p>The <a href="https://oldschool.runescape.wiki/w/Rune_scimitar">Rune Scimitar</a>, for example, has a speed of 4. This means it hits every 2.4s (0.6 * 4).</p>
+<ul>
+<li>If you inflict damage, a bright red hitsplat will appear over the monster you attacked. This is how much damage you inflicted.</li>
+<li>Damage is calculated just before an attack animation occurs. NOT WHEN THE HITSPLAT APPEARS.
+<ul>
+<li>This is the core mechanic behind lazy prayer-flicking. You activate an overhead Prayer just before they attack and deactivate it right after they strike. This way, you have a chance of negating the damage and not drain any prayer points. Prayers are covered more in the next section.</li>
+</ul>
+</li>
+<li>If you miss, a bright blue 0 hitsplat will appear.</li>
+<li>If any hitsplat is duller in appearance, this is someone else's attack.</li>
+</ul>
+<h2 id="combat-skills-explained-again"><a class="header" href="#combat-skills-explained-again">Combat skills explained (again)</a></h2>
+<table><thead><tr><th style="text-align: center">Skill</th><th style="text-align: left">How it effects gameplay</th></tr></thead><tbody>
+<tr><td style="text-align: center">Attack</td><td style="text-align: left">Determines your accuracy, or if your hit will land.</td></tr>
+<tr><td style="text-align: center">Strength</td><td style="text-align: left">Determines how hard you hit if successful, and directly increases your melee max hit.</td></tr>
+<tr><td style="text-align: center">Defense</td><td style="text-align: left">Determines how much of a landing melee attack is negated.</td></tr>
+<tr><td style="text-align: center">HP</td><td style="text-align: left">Determines how many hit points you have</td></tr>
+<tr><td style="text-align: center">Ranged</td><td style="text-align: left">Determines the max hit and accuracy of ranged attacks. Your ranged max hit is also influenced by strength.</td></tr>
+<tr><td style="text-align: center">Magic</td><td style="text-align: left">Determines the max hit and accuracy of magic attacks.</td></tr>
 </tbody></table>
-<hr />
-<h2 id="running"><a class="header" href="#running">Running</a></h2>
-<p>Using your energy to run is the main way you will get around. Your energy level depletes faster with the more weight you carry, so be mindful. A higher Agility level really helps your run energy and unlocked the <strong>Graceful Outfit</strong>, a set of armour that reduces your weight.</p>
-<h2 id="boats"><a class="header" href="#boats">Boats</a></h2>
-<p>Charter boats are a cheap and easy way to get around to coastal cities.</p>
-<h2 id="magic"><a class="header" href="#magic">Magic</a></h2>
-<p>Magic is used for many things, including travel. Teleport to Varrock, for example, is unlocked at level 25 Magic. <em>But that doesn't mean you need 25 magic to use it!</em> Many of the most common teleports are available in tablet (item) form. So you can go the GE and buy Varrock teleport tablets.</p>
-<h2 id="enchanted-jewelry"><a class="header" href="#enchanted-jewelry">Enchanted Jewelry</a></h2>
-<p>Enchanted jewelry is another buyable way to get around the game. Items like the skilling necklace, necklace of passage, ring of dueling, and more can be bought cheaply and used to teleport around. Learning which items teles you where can be overwhelming, but it comes with time.</p>
-<h2 id="spirit-trees"><a class="header" href="#spirit-trees">Spirit Trees</a></h2>
-<p>After the <a href="https://oldschool.runescape.wiki/w/Tree_Gnome_Village">Tree Gnome Village Quest</a>, you unlock a handful of <a href="https://oldschool.runescape.wiki/w/Spirit_tree">Spirit Trees</a> around the game. You simply click on a tree and select another you'd like to travel to.</p>
-<h2 id="fairy-rings"><a class="header" href="#fairy-rings">Fairy Rings</a></h2>
-<p>After <em>starting</em> <a href="https://oldschool.runescape.wiki/w/Fairytale_II_-_Cure_a_Queen">Fairytale II</a>, you unlock the most powerful transportation network, the Fairy Rings. Each Fairy Ring has a 3 letter code ID used to travel between rings.</p>
-<h2 id="hot-air-balloons"><a class="header" href="#hot-air-balloons">Hot Air Balloons</a></h2>
-<p>Are literally stupid. I hate them. They're locked behind a quest and a really frustrating minigame, and require burning particularly logs to get to the different spots. It's ass-shit. Next!</p>
-<h2 id="the-grouping-tab"><a class="header" href="#the-grouping-tab">The grouping tab</a></h2>
-<p>The last method is the grouping tab. Games where players congregate typically have a <strong>Group Teleport</strong> option, which you can use every 20 minutes.</p>
-<p><a href="https://oldschool.runescape.wiki/w/Transportation">A more detailed look can be found here</a></p>
+<p><em>On top of effecting your accuracy and max hits, higher levels allow you to use more powerful weapons or spells.</em></p>
+<h2 id="what-order-should-i-max-the-melee-skills"><a class="header" href="#what-order-should-i-max-the-melee-skills">What order should I max the melee skills?</a></h2>
+<p>Because strength increases your max it, it's most efficient to max it first.
+With that in mind, you do need higher Attack to equip better weapons.</p>
+<p>Leveling any combat is a slow, long-haul skill. Don't expect any combat skill maxed for a long time.</p>
+<h2 id="how-do-i-train-combat"><a class="header" href="#how-do-i-train-combat">How do I train combat?</a></h2>
+<p>As soon as you can, complete the <a href="https://oldschool.runescape.wiki/w/Waterfall_Quest">Waterfall Quest</a>.</p>
+<p>This will boost your Strength and Attack levels to 30+, a huge jump with little to no actual combat. As outlined in the <a href="./03_Quests.html">Quests</a> section, quest rewards are most beneficial early in your accounts lifetime. </p>
+<h2 id="combat-triangle"><a class="header" href="#combat-triangle">Combat Triangle</a></h2>
+<p>This is combat triangle. I literally don't think about it. I might be bad, but idk figured I'd mention it.</p>
+<p>I typically equip gear that protects againt my opponent's damage type and a weapon that they're weak to.</p>
+<p>Always check the wiki to see what kind of stats you're up against.</p>
+<table><thead><tr><th style="text-align: center">The combat triangle</th></tr></thead><tbody>
+<tr><td style="text-align: center"><img src="./imgs/Combat_triangle.png" alt="The combat triangle" /></td></tr>
+</tbody></table>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="06_GE.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="Quests.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next" href="topics/runelite.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="Prayers.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -189,33 +201,17 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="06_GE.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="Quests.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next" href="topics/runelite.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="Prayers.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 
