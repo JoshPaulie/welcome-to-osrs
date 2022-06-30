@@ -7,3 +7,6 @@ title = "Welcome to OldSchool"
 
 [build]
 build-dir = "docs"
+
+[output.html]
+site-url = "/welcome-to-osrs/"
