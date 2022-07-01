@@ -31,7 +31,7 @@ After the [Tree Gnome Village Quest](https://oldschool.runescape.wiki/w/Tree_Gno
 After *starting* [Fairytale II](https://oldschool.runescape.wiki/w/Fairytale_II_-_Cure_a_Queen), you unlock the most powerful transportation network, the Fairy Rings. Each Fairy Ring has a 3 letter code ID used to travel between rings.
 
 ## Hot Air Balloons
-Are literally stupid. I hate them. They're locked behind a quest and a really frustrating minigame, and require burning particularly logs to get to the different spots. It's ass-shit. Next!
+Are literally stupid. I hate them. They're locked behind a quest and a really frustrating minigame, and require burning particular logs to get to the different spots. It's ass-shit. Next!
 
 ## The grouping tab
 The last method is the grouping tab. Games where players congregate typically have a **Group Teleport** option, which you can use every 20 minutes.
