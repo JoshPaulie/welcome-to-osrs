@@ -4,7 +4,7 @@
 If you have any interest in the game, I would go ahead and buy 1 month of membership. The full game is considerably more engaging than the free-to-play version, with faster experience and more activities.
 
 ## What are bonds?
-Bonds are 14 days of membership that you can buy off the GE, or with IRL $. They serve two purposes.
+Bonds are items, redeemable for 14 days of membership that you can buy off the GE, or with IRL $. They serve two purposes.
 
 1. Allow players to buy bonds with $ and sell in-game for gold
 2. Allow players to spend gold for 14 days of membership.

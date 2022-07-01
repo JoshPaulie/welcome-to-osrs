@@ -11,7 +11,7 @@ Some loops are more AFK and offer lower amounts of experience, while others are 
 ## Why are there 2 RuneScapes?
 The original game you played as a kid is still going on today. It's the base game, also known as **RS3**. RS3 is a clusterfuck, with a totally different combat system (as well as many, many pay to win microtransactions).
 
-OldSchool is what you remember playing as a kid. It was launched in 20XX in an attempt to get old players back in with some nostalgia. Oldschool has surpassed RS3 in player count and is evolving with every week.
+OldSchool is what you remember playing as a kid. It was launched in 2013 in an attempt to get old players back in with some nostalgia. Oldschool has surpassed RS3 in player count and is evolving with every week.
 
 > Fun fact! A single membership covers both games, so if you'd like to try RS3 you can with the same account details. (You don't wan to)
 
